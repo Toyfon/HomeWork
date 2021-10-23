@@ -1,3 +1,102 @@
-.someClass {
+.container {
+    display: flex;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
 
+}
+
+.container span {
+    width: 50%;
+    color: white;
+}
+
+.btn {
+    margin-left: auto;
+    flex: none;
+    background:gray;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+
+.wrapp {
+    background-color: gray;
+    max-width: 300px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+.btnWrapp {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.btnAll {
+    background-color:gray;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btnAll:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+
+.btnHigh {
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btnHigh:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+.btnMiddle {
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+
+.btnMiddle:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+.btnLow {
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btnLow:hover {
+    background-color: lightslategray;
+    color: white;
 }
