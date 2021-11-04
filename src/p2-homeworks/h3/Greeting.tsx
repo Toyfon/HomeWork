@@ -1,11 +1,13 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
-import s from './Greeting.module.css'
 import {UserType} from "./HW3";
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
+import s from './../h4/common/c1-SuperInputText/SuperInputText.module.css'
+import st from './Greeting.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type GreetingPropsType = {
     users: Array<UserType>
     name: string
-
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
     addUser: () => void
     error: string
@@ -17,29 +19,31 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, pressingTheEnter, error, totalUsers, users} // деструктуризация пропсов
 ) => {
-    const inputClass = error ? s.errorDanger : s.input
 
+    const finalInputClassName = `${error? s.errorInput: s.superInput} `
     const userElement = users.map(u => <li key={u._id}>{u.name}</li>)
 
 
     return (
-        <div className={s.wrapper}>
+        <div className={st.wrapper}>
             <div>
-                <input value={name}
-                       onChange={setNameCallback}
-                       className={inputClass}
-                       onKeyPress={pressingTheEnter}
-                       onBlur={setNameCallback}/>
+                <SuperInputText className={finalInputClassName}
+                                value={name}
+                                onChange={setNameCallback}
+                                onKeyPress={pressingTheEnter}
+                                onBlur={setNameCallback}/>
 
                 <div className={s.error}>{error}</div>
-                <div className={s.list}>
+                <div className={st.list}>
                     <ul>
                         {userElement}
                     </ul>
                 </div>
             </div>
-            <button onClick={addUser} className={s.btn}>add</button>
-            <div className={s.count}>{totalUsers}</div>
+            <SuperButton className={s.btn}
+                         disabled={!name}
+                         onClick={addUser}>add</SuperButton>
+            <div className={st.count}>{totalUsers}</div>
 
         </div>
 

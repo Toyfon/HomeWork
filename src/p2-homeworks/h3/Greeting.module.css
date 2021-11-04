@@ -3,60 +3,16 @@
     align-items: flex-start;
 }
 
-.error {
-    color: red;
-    height: 20px;
+.count {
+    margin: 10px;
+}
+
+.list{
     margin-left: 10px;
-    font-style: italic;
+    padding-left: 50px;
 }
-
-.errorDanger {
-    margin: 10px;
-    background: lightslategrey;
-
-    border-radius: 3px;
-    outline: none;
-}
-
-
-.btn {
-    margin: 10px;
-    width: 50px;
-    height: 20px;
-
-    background: lightslategrey;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-
-.btn:active {
-    background: cadetblue;
-}
-
-.count {
-    margin: 10px;
-}
-
-.input {
-    margin: 10px;
-    background:lightslategrey;
-    color: white;
-    border-radius: 3px;
-}
-
-.input:focus {
-    outline: none;
-
-}
-
-.count {
-    margin: 10px;
-}
-
 .list ul {
+
     color: white ;
     list-style-type: none;
     font-style: italic;

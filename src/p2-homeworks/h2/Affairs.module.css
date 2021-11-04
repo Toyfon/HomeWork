@@ -1,7 +1,7 @@
 .container {
     display: flex;
     padding: 5px 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid cadetblue ;
     background-color: gray;
     margin-left: 10px;
     margin-right: 10px;
@@ -9,9 +9,10 @@
 }
 
 .container span {
-    width: 50%;
+    width: 90%;
     color: white;
 }
+/*
 
 .btn {
     margin-left: auto;
@@ -23,6 +24,7 @@
     height: 20px;
     border: none;
 }
+*/
 
 
 .wrapp {
@@ -38,7 +40,8 @@
     padding: 5px 10px;
 }
 
-.btnAll {
+
+/*.btnAll {
     background-color:gray;
     color: white;
     border-radius: 2px;
@@ -51,9 +54,10 @@
 .btnAll:hover {
     background-color: lightslategray;
     color: white;
-}
+}*/
 
 
+/*
 .btnHigh {
     background-color: gray;
     color: white;
@@ -100,3 +104,4 @@
     background-color: lightslategray;
     color: white;
 }
+*/

@@ -23,7 +23,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         }
     }
 
-
     const addUser = () => {
         addUserCallback(name)
         if (name) {
@@ -31,7 +30,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             setName('')
         }
     }
-
 
     const pressingTheEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter' && name) {

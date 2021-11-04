@@ -55,17 +55,21 @@ function HW4() {
                 </SuperButton>
 
                 {/*----------------------------------------------------*/}
+                <div className={s.checkBoxWrapp}>
+                    <SuperCheckbox
+                        checked={checked}
+                        onChangeChecked={setChecked}
+                    >
+                        Checkbox 1 {/*// этот текст попадёт в children*/}
+                    </SuperCheckbox>
 
-                <SuperCheckbox
-                    checked={checked}
-                    onChangeChecked={setChecked}
-                >
-                    some text {/*// этот текст попадёт в children*/}
-                </SuperCheckbox>
-
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                    {/*// onChange тоже должен работать*/}
+                    <SuperCheckbox checked={checked} onChange={testOnChange}>
+                        Checkbox 2
+                    </SuperCheckbox>
+                </div>
             </div>
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
