@@ -62,4 +62,5 @@
 .btn:disabled {
     background-color: lightslategrey;
     z-index: -1;
+    margin-bottom: 10px;
 }

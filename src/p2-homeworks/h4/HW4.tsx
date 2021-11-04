@@ -34,7 +34,9 @@ function HW4() {
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue}
+                    error={error}
+                    onChangeText={setText}// проверьте, рабоет ли смешивание классов
                 />
 
                 {/*----------------------------------------------------*/}
