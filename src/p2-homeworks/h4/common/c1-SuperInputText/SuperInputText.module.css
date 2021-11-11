@@ -3,7 +3,7 @@
     background: inherit;
     height: 20px;
     width: 300px;
-    color: white;
+    color: #5D6F58;
     border: none;
     border-bottom: #5D6F58 solid 1px;
 }
@@ -14,15 +14,17 @@
 
 
 .errorInput {
+    position: relative;
     margin: 10px;
     background: inherit;
     height: 20px;
     width: 300px;
     outline: none;
     border:none;
-    border-bottom: rgba(255, 0, 9, 0.82) solid 2px;
-
+    border-bottom: rgba(255, 0, 9, 0.82) inset 1px ;
 }
+
+
 .errorInput:focus {
     outline: none;
 }

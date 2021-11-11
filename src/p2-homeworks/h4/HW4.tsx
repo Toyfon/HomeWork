@@ -5,7 +5,7 @@ import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
 function HW4() {
-    const [text, setText] = useState<string>('')
+    const [text, setText] = useState<string>('hello')
     const error = text ? '' : 'error'
 
     const showAlert = () => {
