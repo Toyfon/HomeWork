@@ -7,11 +7,17 @@ function Header() {
 
     return (
         <div className={s.nav}>
-
-            <NavLink to='/pre-junior' className={s.link}>PreJunior</NavLink>
-            <NavLink to='/junior' className={s.link}>Junior</NavLink>
-            <NavLink to='/junior-plus' className={s.link} >Junior+</NavLink>
-            <div className={s.block}/>
+            <div className={s.block}>Level</div>
+            <div className={s.spacer}/>
+            <NavLink to='/pre-junior'
+                     style={({ isActive }) => ({ color: isActive ? 'lightblue' : 'lightslategrey' })}
+                     className={s.link}>PreJunior</NavLink>
+            <NavLink to='/junior'
+                     style={({ isActive }) => ({ color: isActive ? 'lightblue' : 'lightslategrey' })}
+                     className={s.link}>Junior</NavLink>
+            <NavLink to='/junior-plus'
+                     style={({ isActive }) => ({ color: isActive ? 'lightblue' : 'lightslategrey' })}
+                     className={s.link} >Junior+</NavLink>
 
         </div>
     )
