@@ -1,0 +1,36 @@
+.link {
+    text-decoration: none;
+    color: lightslategrey;
+    margin: 10px;
+}
+
+.link:hover {
+    color: white;
+}
+.link:active {
+    color:blue;
+}
+
+.block {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid darkturquoise;
+
+    margin: 10px;
+    background: cadetblue;
+}
+
+.nav {
+    display: flex;
+    width: 280px;
+
+    transition-duration: 800ms;
+    transform: translate(-230px);
+}
+
+.nav:hover {
+    transition-duration: 800ms;
+    transform: translate(0);
+}
+
