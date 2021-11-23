@@ -26,6 +26,7 @@ function HW4() {
 
             <div className={s.column}>
                 <SuperInputText
+                    type={"password"}
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}

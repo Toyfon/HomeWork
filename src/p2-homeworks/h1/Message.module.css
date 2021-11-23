@@ -8,6 +8,7 @@
     grid-template-rows: 30px 30px 30px;
     grid-template-columns: 80px 220px;
     column-gap: 30px;
+
 }
 
 .avatar img {
@@ -15,6 +16,7 @@
     width: 90px;
     border-radius: 50%;
     background-color: white;
+    object-fit: cover;
 }
 
 .avatar {

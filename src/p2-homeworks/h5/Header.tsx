@@ -10,6 +10,7 @@ function Header() {
             <div className={s.block}>Level</div>
             <div className={s.spacer}/>
             <NavLink to='/pre-junior'
+              /*       style={({ isActive }) => ({ color: isActive ? 'green' : 'blue' })}*/
                      style={({ isActive }) => ({ color: isActive ? 'lightblue' : 'lightslategrey' })}
                      className={s.link}>PreJunior</NavLink>
             <NavLink to='/junior'

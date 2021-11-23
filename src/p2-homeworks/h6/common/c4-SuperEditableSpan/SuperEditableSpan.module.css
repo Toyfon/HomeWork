@@ -1,0 +1,10 @@
+
+
+.spanClassName {
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 10px;
+    height: 33px;
+    cursor: pointer;
+   text-shadow: -1px 1px 3px  blue;
+}
