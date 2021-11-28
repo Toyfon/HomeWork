@@ -1,0 +1,26 @@
+
+.select {
+    padding: 8px 12px;
+    color: lightslategrey;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+
+}
+
+.select:focus,
+.select:hover {
+    outline: none;
+    border: 1px solid cadetblue;
+}
+
+.select option {
+    background: #d8e4e2;
+}
+
+.select option:checked {
+    background: #2b575c;
+}
