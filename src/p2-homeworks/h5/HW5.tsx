@@ -1,7 +1,5 @@
 import React from 'react'
 import Header from './Header'
-
-
 import {HashRouter} from "react-router-dom";
 import RoutesPage from "./RoutesPage";
 

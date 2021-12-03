@@ -37,7 +37,7 @@ function HW4() {
                 <SuperInputText
                     className={s.blue}
                     error={error}
-                    onChangeText={setText}// проверьте, рабоет ли смешивание классов
+                    onChangeText={setText}
                 />
 
                 {/*----------------------------------------------------*/}
@@ -58,10 +58,11 @@ function HW4() {
                 </SuperButton>
 
                 {/*----------------------------------------------------*/}
-                <div className={s.checkBoxWrapp}>
+                <div>
                     <SuperCheckbox
                         checked={checked}
                         onChangeChecked={setChecked}
+
                     >
                         Checkbox 1 {/*// этот текст попадёт в children*/}
                     </SuperCheckbox>
