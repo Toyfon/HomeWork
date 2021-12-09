@@ -1,15 +1,46 @@
+
 .wrapper {
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 300px;
-    height: 100px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    background: linear-gradient(0deg,#d7d7d7 0%, #1b4b50 80%);
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(0deg, #000, #262626);
+    margin-top: 5px;
+    margin-left: 10px;
+
 }
 
+.wrapper::before,
+.wrapper::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 30s linear infinite;
+}
+
+.wrapper::after {
+    filter: blur(20px);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+}
 
 
 .container {
@@ -22,8 +53,9 @@
 .time {
     color: white;
 }
+
 .time:hover {
-   text-shadow:-0px -1px 1px  ;
+    text-shadow: -0px -1px 1px;
 }
 
 
