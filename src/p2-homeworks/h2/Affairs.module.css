@@ -12,19 +12,6 @@
     width: 90%;
     color: white;
 }
-/*
-
-.btn {
-    margin-left: auto;
-    flex: none;
-    background:gray;
-    color: white;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border: none;
-}
-*/
 
 
 .wrapp {
@@ -41,67 +28,3 @@
 }
 
 
-/*.btnAll {
-    background-color:gray;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btnAll:hover {
-    background-color: lightslategray;
-    color: white;
-}*/
-
-
-/*
-.btnHigh {
-    background-color: gray;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btnHigh:hover {
-    background-color: lightslategray;
-    color: white;
-}
-
-.btnMiddle {
-    background-color: gray;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-
-
-.btnMiddle:hover {
-    background-color: lightslategray;
-    color: white;
-}
-
-.btnLow {
-    background-color: gray;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btnLow:hover {
-    background-color: lightslategray;
-    color: white;
-}
-*/
