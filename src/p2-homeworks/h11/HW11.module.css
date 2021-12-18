@@ -1,0 +1,19 @@
+.rangeBlock {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: inherit;
+    column-gap: 18px;
+    margin-left: 10px;
+}
+
+.doubleRangeBlock {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: inherit;
+    column-gap: 18px;
+    margin-left: 10px;
+}

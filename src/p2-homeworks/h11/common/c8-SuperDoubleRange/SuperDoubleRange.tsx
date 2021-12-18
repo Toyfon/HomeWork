@@ -1,24 +1,64 @@
 import React from 'react'
+import {Box, Slider} from "@mui/material";
+
 
 type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
+    setValue1: (value1:number) =>void
+    setValue2: (value2:number) =>void
+    setValue3: (value3:number[])=> void
+    value1:number
+    value2:number
+    value3:number[]
 }
+
+const minDistance = 2;
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
-        onChangeRange, value,
-        // min, max, step, disable, ...
+        setValue1,
+        setValue2,
+        setValue3,
+        value1,
+        value2,
+        value3,
+       ...restProps
     }
 ) => {
-    // сделать самому, можно подключать библиотеки
+
+
+    const handleChange1 = (
+        event: Event,
+        newValue: number | number[],
+        activeThumb: number,
+    ) => {
+        if (!Array.isArray(newValue)) {
+            return;
+        }
+
+        if (activeThumb === 0) {
+            setValue3([Math.min(newValue[0], value2 - minDistance), value2]);
+            setValue1(Math.min(newValue[0], value2 - minDistance))
+        } else {
+            setValue3([value3[0], Math.max(newValue[1], value1 + minDistance)]);
+            setValue2(value3[1])
+        }
+    };
+
 
     return (
         <>
-            DoubleRange
+            <Box sx={{ width: 300, marginRight: "25px" }}>
+                <Slider
+                    size={'medium'}
+                    value={value3}
+                    onChange={handleChange1}
+                    style={{color:"teal"}}
+                />
+            </Box>
+
         </>
     )
 }
 
 export default SuperDoubleRange
+
