@@ -6,7 +6,7 @@ import {themeReducer} from "../../h12/bll/themeReducer";
 
 const reducers = combineReducers({
     loading: loadingReducer,
-    theme:themeReducer
+    theme: themeReducer
 
 })
 
@@ -18,4 +18,4 @@ export type AppStoreType = ReturnType<typeof reducers>
 // @ts-ignore
 window.store = store // for dev
 
-export const usedTypedSelector:TypedUseSelectorHook<AppStoreType> = useSelector
+export const usedTypedSelector: TypedUseSelectorHook<AppStoreType> = useSelector

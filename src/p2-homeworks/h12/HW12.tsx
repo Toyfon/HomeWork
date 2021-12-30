@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import s from "./HW12.module.css";
 import {usedTypedSelector} from "../h10/bll/store";
 import {useDispatch} from "react-redux";
@@ -15,7 +15,7 @@ function HW12() {
 
     const dispatch = useDispatch<Dispatch<ActionType>>()
 
-    const onChangeCallback = (theme:string) => {
+    const onChangeCallback = (theme: string) => {
         dispatch(changeThemeC(theme))
     }
 
@@ -27,9 +27,9 @@ function HW12() {
                 homeworks 12
             </span>
 
-            <SuperRadio  options={themes}
-                         value={theme}
-                         onChangeOption={onChangeCallback}/>
+            <SuperRadio options={themes}
+                        value={theme}
+                        onChangeOption={onChangeCallback}/>
 
             <hr/>
         </div>
