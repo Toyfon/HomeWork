@@ -21,3 +21,10 @@
 .some-text {
     color: darkslateblue;
 }
+.gray {
+    background: #959995;
+}
+
+.gray-text {
+    color: #2faab2;
+}

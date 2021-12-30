@@ -21,7 +21,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         value1,
         value2,
         value3,
-       ...restProps
     }
 ) => {
 
